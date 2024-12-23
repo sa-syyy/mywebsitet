@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Choose Language and Region</title>
+    <link rel="stylesheet" href="choose-language-region.css">
+</head>
+<body>
+    <div class="modal">
+        <div class="modal-header">
+            <button class="back-button">&larr;</button>
+        </div>
+        <div class="modal-content">
+            <h2>What's your language and where do you live?</h2>
+            <p>This helps us find you more relevant content. We won't show it on your profile.</p>
+            <form id="language-region-form">
+                <label for="language">Language</label>
+                <select id="language" name="language">
+                    <option value="en-us">English (US)</option>
+                    <option value="en-uk">English (UK)</option>
+                    <option value="es">Spanish</option>
+                    <option value="fr">French</option>
+                </select>
+                <label for="region">Region</label>
+                <select id="region" name="region">
+                    <option value="us">United States</option>
+                    <option value="uk">United Kingdom</option>
+                    <option value="in">India</option>
+                    <option value="fr">France</option>
+                </select>
+                <button type="submit" class="next-button">Next</button>
+            </form>
+        </div>
+    </div>
+    <script src="choose-language-region.js"></script>
+</body>
+</html>
